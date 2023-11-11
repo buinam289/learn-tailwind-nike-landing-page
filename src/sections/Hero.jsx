@@ -2,7 +2,7 @@ import { arrowRight } from "../assets/icons";
 import { bigShoe1 } from "../assets/images";
 import Button from "../components/Button";
 import { shoes, statistics } from "../constants";
-import ShoeCard from "../components/ShoeCard";
+import SelectableShoeCard from "../components/SelectableShoeCard";
 import { useState } from "react";
 
 
@@ -43,7 +43,7 @@ const Hero = () => {
         <div className="absolute -bottom-[5%] flex justify-start gap-10 mt-10 ">
           {shoes.map((shoe, index) => {
             return (
-              <ShoeCard key={index} shoeUrl={shoe}
+              <SelectableShoeCard key={index} shoeUrl={shoe}
                 bigShoeImage={bigShoeImage}
                 setBigShoeImage={setBigShoeImage}
               />
