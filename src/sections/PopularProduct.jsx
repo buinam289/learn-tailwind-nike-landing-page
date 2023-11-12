@@ -1,4 +1,4 @@
-import { star } from "../assets/icons";
+import Rating from "../components/Rating";
 import { products } from "../constants";
 
 const PopularProduct = () => {
@@ -19,10 +19,7 @@ const PopularProduct = () => {
                   height={282} 
                   className="w-[282px] h-[282px]"/>
                 <div className="flex-1 flex flex-col justify-center items-start gap-3">
-                  <div className="flex justify-start items-center gap-2.5">
-                    <img src={star} alt="rating icon" width={24} height={24} />
-                    <p className="font-montserrat text-slate-gray text-xl leading-normal">(4.5)</p>
-                  </div>
+                  <Rating score={4.5} />
                   <h3 className="text-2xl font-semibold font-palanquin">{product.name}</h3>
                   <p className="text-2xl font-semibold font-montserrat text-coral-red">{product.price}</p>
                 </div>

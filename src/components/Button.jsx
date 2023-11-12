@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Button = ({ label, iconUrl, isPrimary }) => {
     return (
         <button className={`flex justify-center items-center gap-2 ${isPrimary ? "bg-coral-red text-white" : "text-slay-gray"} px-7 py-4 rounded-full border border-coral-red font-montserrat text-lg leading-6`}>
