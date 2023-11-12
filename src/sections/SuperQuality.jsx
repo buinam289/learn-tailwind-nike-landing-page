@@ -10,7 +10,7 @@ const SuperQuality = () => {
 
         <p className="text-lg text-slate-gray info-text  mb-6  lg:max-w-lg">Ensuring premium comfort and style, our meticulously crafted footwear is designed to elevate your experience, providing you with unmatched quality, innovation, and a touch of elegance. <br /> <br />
           Our dedication to detail and excellence ensures your satisfaction</p>
-        <Button label="View details" />
+        <Button label="View details" isPrimary={true}/>
       </div>
       <div className="flex flex-1 justify-center items-center">
         {/* <img src={shoe8} alt="product detail" width={570} height={520} className="object-contain" /> */}
